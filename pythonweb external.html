@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>About Python</title>
+	<meta name="description" content="It's an assignment">
+	<link rel="stylesheet" type="text/css" href="pythonweb.css">
+    <style type="text/css">
+    body *{
+        /*outline: 1px solid pink;*/
+        vertical-align: top;
+    }
+    p, a{
+        font-family: Arial;
+        font-weight: lighter;
+    }
+    div.container{
+        width: 970px;
+        height: 970px;
+        /*background-color: red;*/
+        margin: 0px auto;
+    }
+        div.top{
+            width: 970px;
+            height: 550px;
+            background-color: #2d4e78;
+        }
+            div.top div.header div.logo{
+                width: 485px;
+                height: 100px;
+                display: inline-block;
+            }
+                div.top div.header div.logo img{
+                    width: 353px;
+                    height: 100px;
+                    display: inline-block;
+                }
+                div.top div.header div.tool{
+                    width: 480px;
+                    height: 100px;
+                    display: inline-block;
+                    text-align: right;
+                }
+                    div.top div.header div.tool div.tooloption{
+                        width: 300px;
+                        height: 40px;
+                        display: inline-block;
+                        text-align: right;
+                        margin-right: 20px;
+                    }
+                        div.top div.header div.tool div.tooloption p{
+                            color: white;
+                            display: inline-block;
+                        }
+                        div.top div.header div.tool div.tooloption a{
+                            color: yellow;
+                            margin-top: 16px;
+                            display: inline-block;
+                        }
+                        div.top div.header div.tool div.tooloption span{
+                            display: inline-block;
+                            margin-top: 16px;
+                        }
+                        div.top div.header div.tool div.toolsearch{
+                            width: 300px;
+                            height: 60px;
+                            border-radius: 10px;
+                            margin-right: 10px;
+                            background-color: #444444;
+                            box-shadow: black 3px 5px;
+                            display: inline-block;
+                        }
+                            div.top div.header div.tool div.toolsearch form{
+                                display: inline-block;
+                                width: 200px;
+                                height: 50px;
+                            }
+                                div.top div.header div.tool div.toolsearch form input{
+                                    width: 150px;
+                                    height: 25px;
+                                    margin: 15px;
+                                    box-shadow: black 3px 5px;
+                                    background-color: white;
+                                    border-radius: 0px;
+                                }
+                            div.top div.header div.tool div.toolsearch input{
+                                width: 40px;
+                                height: 35px;
+                                margin: 15px;
+                                color: white;
+                                border-radius: 10px;
+                                box-shadow: black 3px 5px;
+                                background-color: #2d4e78;
+                            }
+            div.top div.menubar{
+                min-height: 30px;
+                border-radius: 10px;
+                margin: 20px;
+            }
+                div.top div.menubar ul{
+                        height: 60px;
+                        background-color: #4f7ab0;
+                    }
+                    div.top div.menubar ul li{
+                        font-size: 20px;
+                        font-family: Arial;  
+                        width: 100px;
+                        height: 20px;
+                        margin-top: 20px;
+                        margin-right: 20px;
+                        margin-left: 20px;
+                        color: white;
+                        display: inline-block;
+                        text-align: center;
+                    }
+            div.top div.content ul{
+                width: 200px;
+                font-family: Arial;
+                color: white;
+                display: inline-block;
+                text-align: center;
+            }
+                div.top div.content ul li{
+                    margin: 5px;
+                }
+            div.top div.content div.contentsmall{
+                width: 600px;
+                height: 100px;
+                display: inline-block;
+                margin-left: 50px;
+                margin-right: 50px;
+                text-align: center;
+                color: white;
+            }
+                div.top div.content div.contentsmall div.quote{
+                    color: yellow;
+                    font-style: italic;
+                }
+                
+        div.mid{
+            width: 970px;
+            height: 300px;
+            background-color: white;
+            font-family: Arial;
+        }
+            div.mid div.midleft{
+                width: 460px;
+                text-align: center;
+                padding: 10px;
+                display: inline-block;
+            }
+                div.mid div.midleft div.line{
+                    width: 460px;
+                    height: 5px;
+                    background-color: #aac6e6;
+                }
+                            div.mid div.midleft div.bullet ul li p{
+                                color: #aac6e6;
+                                margin: 5px;
+                            }
+            div.mid div.midright{
+                width: 460px;
+                text-align: center;
+                padding: 10px;
+                display: inline-block;
+            }
+                div.mid div.midright div.line{
+                    width: 460px;
+                    height: 5px;
+                    background-color: #aac6e6;
+                }
+                            div.mid div.midright div.para span{
+                                color: #aac6e6;
+                            }
+                            div.mid div.midright div.bullet ul li p{
+                                color: #aac6e6;
+                                margin: 5px;
+                            }
+        div.bottom{
+            width: 970px;
+            height: 130px;
+            background-color: #2d4e78;
+            text-align: center;
+            font-family: Arial;
+            color: white;
+
+        }
+            div.bottom ul li{
+                display: inline-block;
+                margin: 30px;
+            }
+    </style>
+</head>
+<body>
+    <div class='container'> <!-- Layer ONE -->
+<!-- ////////////////////////////////////////////////////////////-->
+        <div class='top'>
+            <div class='header'>
+                <div class='logo'><img src="img/python.png"></div>
+                <div class='tool'>
+                    <div class='tooloption'>
+                        <p>Text Size:</p>
+                        <a href="">Normal</a><span>|</span><a href="">Large</a>
+                    </div>
+                    <div class='toolsearch'>
+                        <form>
+                            <input type="text" id="search" name="search">
+                        </form>
+                            <input type="submit" value="GO">
+                    </div>
+                </div>
+            </div>
+            <div class='menubar'>
+                <ul>
+                    <li>About</li>
+                    <li>Downloads</li>
+                    <li>Documentation</li>
+                    <li>community</li>
+                    <li>News</li>
+                    <li>Event</li>
+                </ul>
+            </div>
+            <div class='content'>
+                <ul>
+                    <li href="">Docs</li>
+                    <li href="">Audio/Visual Talks</li>
+                    <li href="">Beginner's Guide</li>
+                    <li href="">Developer's Guide</li>
+                    <li href="">PEP Index</li>
+                    <li href="">Python Books</li>
+                    <li href="">FAQ</li>
+                </ul>
+                <div class='contentsmall'>
+                    <div class="paragraph"><p>First appearing in 1991, Python is a general-purpose, high-level, interpreted programming language whose design focus emphasizes code readability. Whether for processing/analyzing data to powering many well-known applications, Python is not only a great language for new programmers but also powerful enough for seasoned developers building whatever they can think of.</p></div>
+                    <div class="quote">
+                        <p>Beautiful is better than ugly;</p>
+                        <p>Explicit is better than implicit;</p>
+                        <p>Simple is better than complex;</p>
+                        <p>Complex is beter than complicated;</p>
+                        <p>Readability counts;</p>
+                    </div>
+                    <div class='lastquote'><p>The Zen of Python</p></div>
+                </div>
+            </div>
+        </div>
+<!-- ////////////////////////////////////////////////////////////-->
+        <div class='mid'>
+            <div class='midleft'>
+                <div class='line'></div>
+                <div class='head'><h3>Getting Started</h3></div>
+                <div class='para'>Python can be easy to pick up whether you're a first time programmer or you're experienced with other languages. The following pages are a useful first step to get on your way writing programs with Python!</div>
+                <div class='bullet'>
+                    <ul>
+                        <li><p>Beginner's Guide, Programmers</p></li>
+                        <li><p>Beginner's Guide, Non-Programmers</p></li>
+                        <li><p>Code sample and snippets for beginners</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class='midright'>
+                <div class='line'></div>
+                <div class='head'><h3>Applications</h3></div>
+                <div class='para'>The <span>Python Package Index (PyPI)</span> hosts thousands of third-party modules for Python. Both Python's standard library and the community contributed modules allow for endless possibilities.</div>
+                <div class='bullet'>
+                    <ul>
+                        <li><p>Web and Internet Development</p></li>
+                        <li><p>Database Access</p></li>
+                        <li><p>Desktop GUIs</p></li>
+                        <li><p>Network Programming</p></li>
+                        <li><p>Software and Game Development</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+<!-- ////////////////////////////////////////////////////////////-->
+        <div class='bottom'>
+            <ul>
+                <li>Help and General Contact</li>
+                <li>Diversity Initiatives</li>
+                <li>Submit Website Bugs</li>
+            </ul>
+            <h6>Copyright @2002-2016</h6>
+        </div>
+<!-- ////////////////////////////////////////////////////////////-->
+    </div> <!-- End of container Layer ONE -->
+</body>
+</html>
